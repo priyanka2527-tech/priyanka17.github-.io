@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+     <link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="icon" href="favicon.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+
+
+</head>
+
+<style >
+	
+	body{
+		background-image: url(sign.jpg);
+	}
+
+	h3{
+		font-family: 'Cinzel', serif;
+
+	}
+
+	.col10{
+		background-color:  #FFFFFF;	
+		position: absolute;
+		margin-top: 120px;
+		margin-left: 350px;
+		border-radius: 5px;
+		opacity: 0.8;
+
+	}
+
+	.col10:hover{
+		opacity: 1;
+	}
+
+	.email1{
+		position: absolute;
+		margin-left: 30px;
+	}
+
+   input[type=email]{
+   
+   	margin-left: 33px;
+   	width: 75%;
+   	margin-bottom: 10px;
+   
+   }
+ input[type=password]{
+    
+    margin-left:10px;
+   	width: 75%;
+   	margin-bottom: 10px;
+   	
+   }
+
+    input[type=text]{
+   
+   	width: 70%;
+   	margin-bottom: 10px;
+   	
+   }
+
+   input[type=tel]{
+   
+   	width: 75%;
+   	
+   	margin-left: 10px;
+   	margin-bottom: 10px;
+   		
+
+   }
+
+   form{
+   	font-family: 'Josefin Sans', sans-serif;
+   	
+
+
+   }
+
+   input[type=radio]{
+   
+   	margin-left: 20px;
+   }
+
+   	
+   	
+
+
+
+</style>
+<body>
+
+
+	<div>
+		
+	<nav class ="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="nav1">
+				<a class="navbar-brand" href="#">Paradise <i class="fas fa-utensils"></i></a>
+			</div>
+			
+            <ul class="navbar-nav ml-auto nav1">
+            <li class="nav-item"><a class="nav-link" href="mainpage.html"><i class="fas fa-home"></i> Home</a></li>
+			<li class="nav-item"><a class="nav-link" href="booking.html"><i class="fas fa-money-check-alt"></i> Booking </a></li>
+			<li class="nav-item"><a class="nav-link"href="aboutus.html"><i class="fas fa-phone-alt"></i> contact us</a></li>
+			<li class="nav-item"><a class="nav-link"href="signup.html"><i class="fas fa-signature"></i> sign up</a></li>
+		
+		  </ul>
+
+		</nav>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 col10" >
+
+				 <center> <h3><i class="fas fa-user-plus"></i> sign up</h3></center>
+				 <hr>
+				 <div>
+				 	<form action="#">
+				 		<label for="fname">First Name</label>
+				 		<input type="text" name="First Name" placeholder="Your Name"><br>
+				 		<label for="lname">Last Name</label>
+				 		<input type="text" name="Last Name" placeholder="Your Name"><br>
+				 	
+				 		<label for="email"> e-mail</label>
+				 		<input type="email" name="e-mail" placeholder="e-mail"><br>
+				 		<label for="password">Password</label>
+				 		<input type="password" name="password" placeholder="password"><br>
+				
+				 		<label for="Phone">Phone no</label>
+				 		<input type="tel" name="phone" placeholder="98563-35648" pattern="[0-9]{5}-[0-9]{5}" required><br>
+				 		<label for="gender">Gender</label>
+				 		<input type="radio"name="gender" value="male">
+                         <label for="male">Male</label>
+                         <input type="radio"name="gender" value="female">
+                         <label for="female">Female</label>
+                         <input type="radio" name="gender" value="others">
+                         <label for="others">others</label><br>
+
+
+                           <label for="country">Country</label>
+                            <select id="State" name="country" style="  margin-left: 15px;">
+                              <option value="banglore">banglore</option>
+                              <option value="chennai">chennai</option>
+                               <option value="kochi">kochi</option>
+                               <option value="Delhi">Delhi</option>
+                               <option value="hydrabad">hydrabad</option>
+                                  </select>
+
+                                  <center><button type="button" class="btn btn-primary btn-md">Sign up!!</button></center>
+                              
+				 	</form>
+				 </div>
+				
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
